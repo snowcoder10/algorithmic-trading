@@ -1,5 +1,7 @@
 services:
   trading-metrics:
+    env_file:
+      - path: ./.env
     build: .
     command: "tail -f /dev/null"
     volumes:

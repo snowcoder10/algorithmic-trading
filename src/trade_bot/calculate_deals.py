@@ -2,6 +2,7 @@ from pypm.signals import create_bollinger_band_signal, create_macd_signal
 from trade_bot.get_data import get_closing_data_for_tickers
 
 
+
 def find_buys_and_sells():
   closing_data = get_closing_data_for_tickers()
   buys= []
@@ -18,3 +19,5 @@ def find_buys_and_sells():
       sells.append(ticker)
 
   return buys, sells
+
+

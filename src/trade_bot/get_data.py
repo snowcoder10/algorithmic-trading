@@ -6,6 +6,7 @@ import random
 
 def get_closing_data_for_tickers():
   tickers = get_tickers()
+  tickers = random.sample(tickers, 10)
   closing_data = {}
 
   for ticker in tickers:
