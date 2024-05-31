@@ -1,0 +1,6 @@
+services:
+  trading-metrics:
+    build: .
+    command: "tail -f /dev/null"
+    volumes:
+      - ./src:/app
